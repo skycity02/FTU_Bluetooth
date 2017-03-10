@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fastScrollEnabled="true"
+    android:transcriptMode="alwaysScroll"
+    android:isScrollContainer="true"
+    android:orientation="vertical">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginTop="10dp" 
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_01"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu26"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_03"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu27"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_05"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu28"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_07"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu29"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_09"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu30"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_11"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu31"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_13"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu32"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_15"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu33"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_17"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu34"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    
+     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_19"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu35"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_21"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu36"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"    
+    android:orientation="horizontal" >        
+    <TextView android:id="@+id/kairu_name_23"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/kairu37"
+        android:layout_marginLeft="15dp"
+    />
+    <TextView android:id="@+id/kairu37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="@string/tbd"
+        android:layout_marginLeft="0dp"
+    />    
+    </LinearLayout>
+    </LinearLayout>
+

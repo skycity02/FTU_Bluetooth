@@ -1,0 +1,57 @@
+<resources>
+
+<!--     
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+   
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+       
+    </style>
+
+    Application theme.
+    <style name="AppTheme" parent="AppBaseTheme">
+        All customizations that are NOT specific to a particular API-level can go here.
+    </style>
+<style name="MyWindowTitleBackground">
+    <item name="android:background">#444444</item>
+    
+</style>
+
+    <style name="CustomTheme" parent="@android:Theme">
+        <item name="android:windowTitleBackgroundStyle">@style/MyWindowTitleBackground</item>
+    </style>
+    
+    <style name="WindowTitle">
+    <item name="android:singleLine">true</item>
+    <item name="android:textAppearance">@style/TextAppearance.WindowTitle</item>
+    <item name="android:shadowColor">#BB000000</item>
+    <item name="android:shadowRadius">2.75</item>
+    </style>
+    
+    <style name="WindowTitleBackground">
+    <item name="android:background">@android:drawable/title_bar</item>    
+</style>
+
+    <style name=“theme1">
+        <item name="windowTitleStyle">@android:style/WindowTitle</item>
+<item name="windowTitleSize">25dip</item>
+<item name="windowTitleBackgroundStyle">@android:style/WindowTitleBackground</item>
+    </style> -->
+    
+    <!-- <style name="CustomAlertDialogBackground" parent="@android:style/Theme.Holo.Dialog">
+    <item name="android:background">@android:color/holo_green_light</item>
+</style> -->
+
+   <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:background">#ebebeb</item>
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:minHeight="48dp"    
+    android:paddingLeft="5dp"
+     >    
+    
+    <TextView
+        android:id="@+id/soe_id"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"         
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/soe_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"     
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/soe_time"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"     
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/soe_issue"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"     
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    
+
+</LinearLayout>

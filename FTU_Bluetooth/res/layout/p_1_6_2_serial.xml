@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" 
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginBottom="10dp" 
+	    android:textColor="@android:color/black"
+        android:text="@string/serial_1"
+    />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/baudrate"
+    />
+    <Spinner android:id="@+id/ser1_baud"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/check_bit"
+    />
+    <Spinner android:id="@+id/ser1_check"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/protocol"
+    />
+    <Spinner android:id="@+id/ser1_protocal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        android:baselineAligned="true"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/prot_addr"
+    />
+    <EditText android:id="@+id/ser1_protaddr"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="10dp"            
+            layout="@layout/h_seprator" />
+    
+    <!-- ************************** Serial 2 ******************************* -->
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" 
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginBottom="10dp" 
+	    android:textColor="@android:color/black"
+        android:text="@string/serial_2"
+    />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/baudrate"
+    />
+    <Spinner android:id="@+id/ser2_baud"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/check_bit"
+    />
+    <Spinner android:id="@+id/ser2_check"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/protocol"
+    />
+    <Spinner android:id="@+id/ser2_protocal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/prot_addr"
+    />
+    <EditText android:id="@+id/ser2_protaddr"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="10dp"            
+            layout="@layout/h_seprator" />
+    
+    <!-- ************************** Serial 3 ******************************* -->
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" 
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginBottom="10dp" 
+	    android:textColor="@android:color/black"
+        android:text="@string/serial_3"
+    />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/baudrate"
+    />
+    <Spinner android:id="@+id/ser3_baud"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/check_bit"
+    />
+    <Spinner android:id="@+id/ser3_check"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/protocol"
+    />
+    <Spinner android:id="@+id/ser3_protocal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/prot_addr"
+    />
+    <EditText android:id="@+id/ser3_protaddr"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="10dp"            
+            layout="@layout/h_seprator" />
+    
+    <!-- ************************** Serial 4 ******************************* -->
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" 
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginBottom="10dp" 
+	    android:textColor="@android:color/black"
+        android:text="@string/serial_4"
+    />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/baudrate"
+    />
+    <Spinner android:id="@+id/ser4_baud"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/check_bit"
+    />
+    <Spinner android:id="@+id/ser4_check"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/protocol"
+    />
+    <Spinner android:id="@+id/ser4_protocal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/prot_addr"
+    />
+    <EditText android:id="@+id/ser4_protaddr"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="10dp"            
+            layout="@layout/h_seprator" />
+    
+    <!-- ************************** Serial 5 ******************************* -->
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" 
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginBottom="10dp" 
+	    android:textColor="@android:color/black"
+        android:text="@string/serial_5"
+    />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/baudrate"
+    />
+    <Spinner android:id="@+id/ser5_baud"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/check_bit"
+    />
+    <Spinner android:id="@+id/ser5_check"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/protocol"
+    />
+    <Spinner android:id="@+id/ser5_protocal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"   
+    android:layout_marginLeft="10dp"  
+    android:gravity="center_vertical"  
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="@string/prot_addr"
+    />
+    <EditText android:id="@+id/ser5_protaddr"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"        
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        
+        />
+    
+    </LinearLayout>
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="10dp"            
+            layout="@layout/h_seprator" />
+</LinearLayout>

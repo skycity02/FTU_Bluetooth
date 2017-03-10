@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FTU智能终端</string>
+    <string name="app_title">FTU智能终端</string>
+    <string name="action_settings">设置</string>
+        <string name="test">测试数据</string>
+<!--  BluetoothChat -->
+    <string name="send">发送</string>
+    <string name="not_connected">没有连接到设备</string>
+    <string name="bt_not_enabled_leaving">蓝牙不可用，退出程序</string>
+    <string name="title_connecting">连接中...</string>
+    <string name="title_connected_to">已连接: </string>
+    <string name="title_not_connected">未连接</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">扫描设备中...</string>
+    <string name="select_device">选择设备连接</string>
+    <string name="none_paired">没有配对的设备</string>
+    <string name="none_found">找不到设备</string>
+    <string name="title_paired_devices">已配对设备</string>
+    <string name="title_other_devices">其它可用设备</string>
+    <string name="button_scan">扫描设备</string>
+
+    <!-- Options Menu -->
+    <string name="connect">连接设备</string>
+    <string name="discoverable">设置可见</string>
+
+    <string name="main_menu_1">实测值</string>
+    <string name="main_menu_2">遥控分合闸</string>
+    <string name="main_menu_3">参数设置</string>
+    <string name="main_menu_4">SOE</string>
+    <string name="main_menu_5">故障信息</string>
+    <string name="main_menu_6">通讯参数</string>
+    <string name="main_menu_7">权限管理 </string>
+   
+    <string name="menu_1_1">开入量状态</string>
+    <string name="menu_1_2">保护动作状态</string>
+    <string name="menu_1_3">实时电量值</string>
+    <string name="menu_1_4">其它 </string>
+
+    <string name="menu_2_1">开关跳闸</string>
+    <string name="menu_2_2">开关合闸</string>
+    
+    <string name="menu_4_1">SOE1</string>
+    <string name="menu_4_2">SOE2</string>
+    
+    <string name="menu_5_1">故障信息1</string>
+    <string name="menu_5_2">故障信息2</string>
+    
+    <string name="menu_6_1">网卡参数</string>
+    <string name="menu_6_3">网络连接</string>
+    <string name="menu_6_2">串口参数</string>
+    
+    <string name="send_message">发送数据到</string>
+    <string name="receive_message">接收数据来自</string>
+    
+    <string name="tbd">Reserved TBD</string>
+    
+    <string name="hex_only">只支持16进制字符</string>
+    <string name="backtohome">返回主界面</string>
+    
+    <string name="kairu20">故障检验软压板: </string>
+    <string name="kairu21">异常灯: </string>
+    <string name="kairu22">告警灯: </string>
+    <string name="kairu23">故障灯: </string>
+    <string name="kairu24">状态1灯: </string>
+    <string name="kairu25">状态2灯: </string>
+    
+    <string name="kairu26">电压越上限: </string>
+    <string name="kairu27">电压越下限: </string>
+    <string name="kairu28">过流1段: </string>
+    <string name="kairu29">过流2段: </string>
+    <string name="kairu30">过流3段: </string>
+    <string name="kairu31">零序过流: </string>
+    <string name="kairu32">零序过压: </string>
+    <string name="kairu33">失压: </string>
+    <string name="kairu34">反时限过流: </string>
+    <string name="kairu35">重合闸动作: </string>
+    <string name="kairu36">重合器分: </string>
+    <string name="kairu37">重合器合: </string>
+       
+    <string name="yaoce01">Ua1: </string>
+    <string name="yaoce02">Ub1: </string>
+    <string name="yaoce03">Uc1: </string>
+    <string name="yaoce04">Ua2: </string>
+    <string name="yaoce05">Ub2: </string>
+    <string name="yaoce06">Uc2: </string>
+    <string name="yaoce07">la: </string>
+    <string name="yaoce08">lb: </string>
+    <string name="yaoce09">lc: </string>
+    <string name="yaoce10">3U0: </string>
+    <string name="yaoce11">3I0: </string>
+    <string name="yaoce12">Uab: </string>
+    <string name="yaoce13">Ubc: </string>
+    <string name="yaoce14">Uca: </string>
+    <string name="yaoce15">P: </string>
+    <string name="yaoce16">Q: </string>
+    <string name="yaoce17">Cos: </string>
+    <string name="yaoce18">频率: </string>
+    <string name="yaoce19">温度: </string>
+    <string name="yaoce20">直流: </string>
+    <string name="yaoce21">正向有功电度: </string>
+    <string name="yaoce22">反向有功电度: </string>
+    <string name="yaoce23">正向无功电度: </string>
+    <string name="yaoce24">反向无功电度: </string>
+    
+    <string name="old_pwd">旧密码: </string>
+    <string name="new_pwd">新密码: </string>
+    <string name="new_pwd_again">确认密码: </string>
+    
+    <string name="remote_id">选择遥控号: </string>
+    <string name="preset">预置</string>
+    <string name="execute">执行</string>
+    <string name="cancel">取消</string>
+    <string name="exec_direct">直接执行</string>
+    
+    <string name="success">成功</string>
+    <string name="fail">失败</string>
+    
+    <string name="fault_holding">故障遥信保持时间: </string>
+    <string name="ftu_func">FTU功能</string>
+    <string name="closed_loop">合环功能</string>
+    <string name="power_loss">失电延时分闸</string>
+    <string name="switching_off_time">分闸时间:</string>
+    <string name="get_power">得电延时合闸</string>
+    <string name="switch_on">合闸时间:</string>
+    
+    <string name="single_vol_loss">单侧失压合闸</string>
+    <string name="switch_func">重合闸功能</string>
+    <string name="switch_time">重合闸次数:</string>
+    <string name="quit">退出</string>
+    <string name="once">一次</string>
+    <string name="twice">二次</string>
+    <string name="three">三次</string>
+    <string name="once_time">一次重合闸时间:</string>
+    <string name="twice_time">二次重合闸时间:</string>
+    <string name="three_time">三次重合闸时间:</string>
+    <string name="post_acceleration">后加速功能</string>
+    <string name="post_acce_time">后加速时间:</string>
+    
+    <string name="Inrush_current_locking">涌流闭锁功能</string>
+    <string name="twice_inrush">2次谐波涌流闭锁</string>
+    <string name="harmonic_percent">谐波百分比(%):</string>
+    <string name="enlarge_fix_inrush">放大定值涌流闭锁</string>
+    <string name="evading_Inrush_multi">躲涌流定值倍数:</string>
+    <string name="evading_Inrush_time">躲涌流时限:</string>
+    
+    <string name="inverse_time_lag">反时限类型</string>
+    <string name="inverse_time">反时限类型:</string>
+    <string name="mornal_inverse">一般反时限</string>
+    <string name="abnormal_inverse">非常反时限</string>
+    <string name="extreme_inverse">极端反时限</string>
+    <string name="thermal_overload_inverse">热过载反时限</string>
+    
+    <string name="number">#</string>
+    <string name="name">名称</string>
+    <string name="on_off">投|退</string>
+    <string name="type">类型</string>
+    <string name="fixed_value">定值</string>
+    <string name="time_limit">时限(s)</string>
+    
+    <string name="fixed_table">定值表格</string>
+    <string name="fixed_tab_name1">电压越上限</string>
+    <string name="fixed_tab_name2">电压越下限</string>
+    <string name="fixed_tab_name3">过流一段</string>
+    <string name="fixed_tab_name4">过流二段</string>
+    <string name="fixed_tab_name5">过流三段</string>
+    <string name="fixed_tab_name6">零序过流</string>
+    <string name="fixed_tab_name7">零序过压</string>
+    <string name="fixed_tab_name8">失压保护</string>
+    <string name="fixed_tab_name9">反时限电流</string>
+    
+    <string name="on">合</string>
+    <string name="off">分</string>
+    <string name="switch_in">开入</string>
+    <string name="save">保存</string>
+    <string name="num_limit">超过最大值655.35</string>
+    <string name="num_limit_int">超过最大值65535</string>
+    <string name="num_limit_byte">超过最大值255</string>
+    
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="config_confim">是否将设定保存到FTU设备里？</string>
+    
+    <string name="exit">出口</string>
+    <string name="warning">告警</string>
+    <string name="para_success">保存成功，连接即将断开，请重新连接</string>
+    <string name="refresh">刷新</string>
+    
+    <string name="pwd_title">确认密码</string>
+    <string name="pwd_input">请输入密码:</string>
+    <string name="pwd">请输入密码:</string>
+    
+    <string name="pwd_preference">8888</string>
+    <string name="pwd_summary">Default pwd</string>
+    <string name="pwd_pre_title">pwd for operation</string>
+    <string name="pwd_confirm">确认修改</string>
+    
+    <string name="pwd_warn_old">原密码输入不对</string>
+    <string name="pwd_warn_new">新密码输入两次不一致</string>
+    <string name="pwd_warn">密码错误，请重新输入</string>
+    <string name="pwd_success">密码修改成功</string>
+    
+    <string name="yaoxin20">故障检验软压板</string>
+    <string name="yaoxin21">异常灯</string>
+    <string name="yaoxin22">告警灯</string>
+    <string name="yaoxin23">故障灯</string>
+    <string name="yaoxin24">状态1灯</string>
+    <string name="yaoxin25">状态2灯</string>
+    
+    <string name="yaoxin26">电压越上限</string>
+    <string name="yaoxin27">电压越下限</string>
+    <string name="yaoxin28">过流1段</string>
+    <string name="yaoxin29">过流2段</string>
+    <string name="yaoxin30">过流3段</string>
+    <string name="yaoxin31">零序过流</string>
+    <string name="yaoxin32">零序过压</string>
+    <string name="yaoxin33">失压</string>
+    <string name="yaoxin34">反时限过流</string>
+    <string name="yaoxin35">重合闸动作</string>
+    <string name="yaoxin36">重合器分</string>
+    <string name="yaoxin37">重合器合</string>
+    
+    <string name="yaoxin_name">遥信名称</string>
+    <string name="time">时间</string>
+    <string name="issue">事项</string>
+    
+    <string name="start">启动</string>
+    <string name="action">动作</string>
+    <string name="recover">恢复</string>
+    
+    <string name="protect_obj">保护元件</string>
+    <string name="fault_issue">事件</string>
+    <string name="fault_value">故障量</string>
+    <string name="action_time">动作时间</string>
+    
+    <string name="network_card">网卡</string>
+    <string name="network_card1">网卡 1:</string>
+    <string name="network_card2">网卡 2:</string>
+    <string name="ip">IP:</string>
+    <string name="maskcode">子网掩码:</string>
+    <string name="gateway">网关:</string>
+    
+    <string name="serial">串口</string>
+    <string name="serial_1">串口 1:</string>
+    <string name="serial_2">串口 2:</string>
+    <string name="serial_3">串口 3:</string>
+    <string name="serial_4">串口 4:</string>
+    <string name="serial_5">串口 5:</string>
+    
+    <string name="baudrate">波特率:</string>
+    <string name="check_bit">校验位:</string>
+    <string name="protocol">规约:</string>
+    <string name="prot_addr">规约地址:</string>
+    
+    <string name="dot">.</string>
+    
+    <string name="connect_ip">连接IP:</string>
+    <string name="port">端口号:</string>
+    <string name="network_prot">网络协议:</string>
+    <string name="as">本机作为:</string>
+    
+    <string name="connect_1">网络连接 1:</string>
+    <string name="connect_2">网络连接 2:</string>
+    <string name="connect_3">网络连接 3:</string>
+    
+    <string name="baud_1">300</string>
+    <string name="baud_2">600</string>
+    <string name="baud_3">1200</string>
+    <string name="baud_4">2400</string>
+    <string name="baud_5">4800</string>
+    <string name="baud_6">9600</string>
+    <string name="baud_7">14400</string>
+    <string name="baud_8">19200</string>
+    <string name="baud_9">38400</string>
+    <string name="baud_10">57600</string>
+    <string name="baud_11">115200</string>
+    <string name="baud_12">230400</string>
+    <string name="baud_13">460800</string>
+    <string name="baud_14">921600</string>
+    
+    <string name="checkbit_1">无</string>
+    <string name="checkbit_2">偶</string>
+    <string name="checkbit_3">奇</string>
+    
+    <string name="protocol_1">无</string>
+    <string name="protocol_2">维护</string>
+    <string name="protocol_3">modbus</string>
+    <string name="protocol_4">101</string>
+    <string name="protocol_5">104</string>
+    <string name="protocol_6">CDT92</string>
+    
+    <string name="mode1_1">TCP</string>
+    <string name="mode1_2">UDP</string>
+    <string name="mode2_1">服务器</string>
+    <string name="mode2_2">客户端</string>
+    
+</resources>

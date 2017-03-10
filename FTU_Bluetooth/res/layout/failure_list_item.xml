@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:minHeight="48dp"    
+    android:paddingLeft="5dp"
+     >    
+    
+    <TextView
+        android:id="@+id/failure_id"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"         
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/failure_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" 
+        android:minHeight="35dp"     
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/failure_issue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"     
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/failure_value"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"     
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/failure_time"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"     
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    
+
+</LinearLayout>

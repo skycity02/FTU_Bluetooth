@@ -1,0 +1,1931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="5dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/fault_holding"
+        android:layout_gravity="center"
+    />
+    <EditText android:id="@+id/fault_holding"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        
+        />
+    </LinearLayout><!-- android:textSize="16sp" android:textAppearance="?android:attr/textAppearanceMedium" -->
+    <!-- ***********分隔线************** -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"
+            android:layout_gravity="center" 
+            layout="@layout/h_seprator" />
+    <TextView android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#1111EE"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/ftu_func"
+        android:layout_gravity="center"
+        
+    />
+    <include
+        android:layout_gravity="center"
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    </LinearLayout>
+    <!-- *********Seperator End *************** -->
+    <!-- ********* 合环功能开始 *************** -->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <CheckBox android:id="@+id/closed_loop"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/closed_loop"
+        android:layout_gravity="center"
+    />   
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <CheckBox android:id="@+id/power_loss"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/power_loss"
+        android:layout_gravity="center"
+    /> 
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="9dp"
+        android:paddingRight="0dp"
+        android:text="@string/switching_off_time"
+        android:layout_gravity="center"
+    />  
+    <EditText android:id="@+id/switching_off_time"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+    <!-- 得电延时分闸 Begin -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <CheckBox android:id="@+id/get_power"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/get_power"
+        android:layout_gravity="center"
+    /> 
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="9dp"
+        android:paddingRight="0dp"
+        android:text="@string/switch_on"
+        android:layout_gravity="center"
+    />  
+    <EditText android:id="@+id/switch_on"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+    
+    <!-- 单侧失压合闸 -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <CheckBox android:id="@+id/single_vol_loss"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/single_vol_loss"
+        android:layout_gravity="center"
+    /> 
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="9dp"
+        android:paddingRight="0dp"
+        android:text="@string/switch_on"
+        android:layout_gravity="center"
+    />  
+    <EditText android:id="@+id/switch_on_single"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+    <!-- 重合闸功能 分割线-->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"
+            android:layout_gravity="center" 
+            layout="@layout/h_seprator" />
+    <TextView android:id="@+id/switch_func"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#1111EE"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/switch_func"
+        android:layout_gravity="center"
+        
+    />
+    <include
+        android:layout_gravity="center"
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/switch_time"
+        android:layout_gravity="center"
+    />
+    <Spinner android:id="@+id/switch_time"
+        android:layout_marginLeft="5dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/once_time"
+        android:layout_gravity="center"
+    />
+    <EditText android:id="@+id/once_time"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/twice_time"
+        android:layout_gravity="center"
+    />
+    <EditText android:id="@+id/twice_time"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/three_time"
+        android:layout_gravity="center"
+    />
+    <EditText android:id="@+id/three_time"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+    
+    <!-- 后加速时间 -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <CheckBox android:id="@+id/post_acceleration"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/post_acceleration"
+        android:layout_gravity="center"
+    />   
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="9dp"
+        android:paddingRight="0dp"
+        android:text="@string/post_acce_time"
+        android:layout_gravity="center"
+    />  
+    <EditText android:id="@+id/post_acce_time"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+    <!-- 涌波开始 -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"
+            android:layout_gravity="center" 
+            layout="@layout/h_seprator" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#1111EE"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/Inrush_current_locking"
+        android:layout_gravity="center"
+        
+    />
+    <include
+        android:layout_gravity="center"
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <CheckBox android:id="@+id/twice_inrush"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/twice_inrush"
+        android:layout_gravity="center"
+    />   
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="40dp"
+        android:paddingRight="0dp"
+        android:text="@string/harmonic_percent"
+        android:layout_gravity="center"
+    />  
+    <EditText android:id="@+id/harmonic_percent"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <CheckBox android:id="@+id/enlarge_fix_inrush"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/enlarge_fix_inrush"
+        android:layout_gravity="center"
+    />   
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="40dp"
+        android:paddingRight="0dp"
+        android:text="@string/evading_Inrush_multi"
+        android:layout_gravity="center"
+    />  
+    <EditText android:id="@+id/evading_Inrush_multi"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="40dp"
+        android:paddingRight="0dp"
+        android:text="@string/evading_Inrush_time"
+        android:layout_gravity="center"
+    />  
+    <EditText android:id="@+id/evading_Inrush_time"
+        android:layout_marginLeft="5dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    </LinearLayout>
+        <!-- 反时限类型 -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"
+            android:layout_gravity="center" 
+            layout="@layout/h_seprator" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#1111EE"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/inverse_time_lag"
+        android:layout_gravity="center"
+        
+    />
+    <include
+        android:layout_gravity="center"
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/inverse_time"
+        android:layout_gravity="center"
+    />
+    <Spinner android:id="@+id/inverse_time_lag"
+        android:layout_marginLeft="0dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    </LinearLayout>
+    
+    <!-- *************  定值表格开始 *** The Fixed Value Grid Begin  ******************-->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:layout_marginTop="0dp" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="0dp" 
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"
+            android:layout_gravity="center" 
+            layout="@layout/h_seprator" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#1111EE"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/fixed_table"
+        android:layout_gravity="center"
+        
+    />
+    <include
+        android:layout_gravity="center"
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    </LinearLayout>
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="10dp"
+            layout="@layout/h_seprator" />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <!-- <TextView android:id="@+id/new_pwd"        
+        android:layout_width="13dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/number"
+        android:layout_gravity="center"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" /> -->
+    <TextView android:id="@+id/new_pwd"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/name"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/on_off"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView android:id="@+id/spinner_id"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/type"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:paddingLeft="5dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView android:id="@+id/new_pwd_input"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fixed_value"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView android:id="@+id/new_pwd_input"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="@string/time_limit"
+        android:textSize="18sp"
+        
+        android:layout_gravity="center"
+        android:paddingLeft="5dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    
+
+    <!-- **************** The Grid Values ******************* -->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/fixed_tab_name1"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <CheckBox android:id="@+id/fixed_tab_check1"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <Spinner android:id="@+id/fixed_tab_spin1"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/drop_list"
+        
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_fixed1"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_time1"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"        
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    
+    <!-- *************The Second Line 表格设置第二行 **************-->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/fixed_tab_name2"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <CheckBox android:id="@+id/fixed_tab_check2"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <Spinner android:id="@+id/fixed_tab_spin2"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/drop_list"
+        
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_fixed2"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"         
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_time2"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"        
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    
+    <!-- *************The Third Line 表格设置第三行 **************-->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/fixed_tab_name3"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <CheckBox android:id="@+id/fixed_tab_check3"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <Spinner android:id="@+id/fixed_tab_spin3"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/drop_list"
+        
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_fixed3"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_time3"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"        
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    
+    <!-- *************The Fourth Line 表格设置第四行 **************-->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/fixed_tab_name4"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <CheckBox android:id="@+id/fixed_tab_check4"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <Spinner android:id="@+id/fixed_tab_spin4"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/drop_list"
+        
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_fixed4"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_time4"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"        
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    
+    <!-- The Fifth Line 表格设置第5行 -->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/fixed_tab_name5"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <CheckBox android:id="@+id/fixed_tab_check5"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <Spinner android:id="@+id/fixed_tab_spin5"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/drop_list"
+        
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_fixed5"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_time5"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"        
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    
+    <!-- *************The Sixth Line 表格设置第六行 **************-->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/fixed_tab_name6"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <CheckBox android:id="@+id/fixed_tab_check6"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <Spinner android:id="@+id/fixed_tab_spin6"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/drop_list"
+        
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_fixed6"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_time6"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"        
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    
+    <!-- *************The 7 Line 表格设置第7行 **************-->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/fixed_tab_name7"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <CheckBox android:id="@+id/fixed_tab_check7"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <Spinner android:id="@+id/fixed_tab_spin7"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/drop_list"
+        
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_fixed7"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_time7"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"        
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    
+    <!-- *************The 8 Line 表格设置第8行 **************-->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/fixed_tab_name8"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <CheckBox android:id="@+id/fixed_tab_check8"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <Spinner android:id="@+id/fixed_tab_spin8"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/drop_list"
+        
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_fixed8"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_time8"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"        
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+    
+        <!-- *************The 9 Line 表格设置第9行 **************-->
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"   
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="horizontal" >
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/fixed_tab_name9"
+        android:layout_weight="1"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <CheckBox android:id="@+id/fixed_tab_check9"
+        android:layout_gravity="center"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+    />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <Spinner android:id="@+id/fixed_tab_spin9"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/drop_list"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_fixed9"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    <EditText android:id="@+id/fixed_tab_time9"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"        
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        />
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            layout="@layout/v_seprator" />
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/seperate_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"            
+            layout="@layout/h_seprator" />
+</LinearLayout>
